@@ -11,12 +11,14 @@
 
 int MODBUS_SEM_ID = -1;
 
+/*
 union semun
 {
 	int		 val;
 	struct semid_ds *buf;
 	unsigned short * array;
 };
+*/
 
 int semaphore_init(void)
 {
