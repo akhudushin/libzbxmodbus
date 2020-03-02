@@ -25,7 +25,7 @@ One more note: use `--zabbix-3.2` in `configure` for all newer Zabbix versions s
   - Module libzbxmodule.so can be loaded into zabbix_server, zabbix_proxy or zabbix_agent(use passive mode).  
     Depending on where you want to load your module edit appropriate Zabbix configuration file:
 ```
-      LoadModulePath = /etc/zabbix/lib
+      LoadModulePath = /usr/local/lib
       LoadModule = libzbxmodbus.so
 ```
   - Because of the resource locking and that networks might be slow to respond, it is also recommended to tune `Timeout` to 10 seconds or more:
