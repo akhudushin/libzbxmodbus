@@ -1,9 +1,12 @@
-#include <byteswap.h>
+#include <sys/endian.h>
 #include <errno.h>
 #include <stdlib.h>
 #include <string.h>
 
 #include "endianness.h"
+
+#define bswap_16 bswap16
+#define bswap_32 bswap32
 
 typedef struct
 {
